@@ -47,4 +47,17 @@ public class BookService {
             }
         }
     }
+
+    public void findByTitle() {
+        System.out.print("찾을 도서명 > ");
+        String bookTitle = sc.next();
+        boolean result = bookRepository.findByTitle(bookTitle);
+        for (BookDTO bookDTO : bookDTOList) {
+            if (result) {
+                System.out.println("bookDTO = " + bookDTO);
+            } else {
+                System.out.println("존재하지 않습니다.");
+            }
+        }
+    }
 }

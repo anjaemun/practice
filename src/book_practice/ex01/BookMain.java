@@ -21,7 +21,7 @@ public class BookMain {
                 bookService.findById();
 
             } else if (sel == 4) {
-
+                bookService.findByTitle();
             } else if (sel == 5) {
 
             } else if (sel == 6) {

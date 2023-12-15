@@ -27,4 +27,15 @@ public class BookRepository {
         }
         return result;
     }
+
+    public boolean findByTitle(String bookTitle) {
+        boolean result = false;
+        for (int i = 0; i < bookDTOList.size(); i++) {
+            if(bookTitle.equals(bookDTOList.get(i).getBookTitle())){
+                System.out.println("bookDTOList = " + bookDTOList.get(i));
+                result = true;
+            }
+        }
+        return result;
+    }
 }
