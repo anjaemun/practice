@@ -15,8 +15,8 @@ public class BookMain {
             int sel = sc.nextInt();
             if (sel == 1) {
                 bookService.save();
-
             } else if (sel == 2) {
+                bookService.list();
 
             } else if (sel == 3) {
 
