@@ -17,8 +17,8 @@ public class BookMain {
                 bookService.save();
             } else if (sel == 2) {
                 bookService.list();
-
             } else if (sel == 3) {
+                bookService.findById();
 
             } else if (sel == 4) {
 

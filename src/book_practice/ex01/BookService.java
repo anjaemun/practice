@@ -29,10 +29,22 @@ public class BookService {
 
     public void list() {
         List<BookDTO> bookDTOList1 = bookRepository.list();
-        for(int i = 0; i < bookDTOList1.size(); i++){
+        for (int i = 0; i < bookDTOList1.size(); i++) {
             System.out.println(bookDTOList1.get(i));
         }
 
     }
 
+    public void findById() {
+        System.out.print("찾을 id > ");
+        Long id = sc.nextLong();
+        boolean result = bookRepository.findById(id);
+        for (BookDTO bookDTO : bookDTOList) {
+            if (result) {
+                System.out.println("bookDTO = " + bookDTO);
+            } else {
+                System.out.println("존재하지 않습니다.");
+            }
+        }
+    }
 }

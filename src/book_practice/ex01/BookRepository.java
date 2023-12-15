@@ -16,4 +16,15 @@ public class BookRepository {
     public List<BookDTO> list() {
         return bookDTOList;
     }
+
+    public boolean findById(Long id) {
+        boolean result = false;
+        for (int i = 0; i < bookDTOList.size(); i++) {
+            if (id.equals(bookDTOList.get(i).getId())) {
+                System.out.println("bookDTOList = " + bookDTOList.get(i));
+                result = true;
+            }
+        }
+        return result;
+    }
 }
