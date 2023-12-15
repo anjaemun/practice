@@ -19,11 +19,10 @@ public class BookMain {
                 bookService.list();
             } else if (sel == 3) {
                 bookService.findById();
-
             } else if (sel == 4) {
                 bookService.findByTitle();
             } else if (sel == 5) {
-
+                bookService.modifyPrice();
             } else if (sel == 6) {
 
             } else if (sel == 7) {

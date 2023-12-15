@@ -60,4 +60,17 @@ public class BookService {
             }
         }
     }
+
+    public void modifyPrice() {
+        System.out.print("변경할 id >");
+        Long id = sc.nextLong();
+        boolean bookDTO = bookRepository.findById(id);
+        for (int i = 0; i < bookDTOList.size(); i++) {
+            if(bookDTO){
+                System.out.print("변경할 가격 > ");
+                int bookPrice = sc.nextInt();
+                boolean modifyPrice = bookRepository.modifyPrice(id, bookPrice);
+            }
+        }
+    }
 }
