@@ -59,12 +59,12 @@ public class BookDTO {
 
     @Override
     public String toString() {
-        return "BookDTO{" +
-                "id=" + id +
-                ", bookTitle='" + bookTitle + '\'' +
-                ", bookAuthor='" + bookAuthor + '\'' +
-                ", bookPrice=" + bookPrice +
-                ", bookPublisher='" + bookPublisher + '\'' +
+        return "BookDTO {" +
+                "id = " + id +
+                ", bookTitle = '" + bookTitle + '\'' +
+                ", bookAuthor = '" + bookAuthor + '\'' +
+                ", bookPrice = " + bookPrice +
+                ", bookPublisher = '" + bookPublisher + '\'' +
                 '}';
     }
 }
